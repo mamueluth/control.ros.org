@@ -3,10 +3,10 @@
 # The file is inspired by the Makefile for the navigation.ros.org <https://github.com/ros-planning/navigation.ros.org>
 
 # You can set these variables from the command line.
-SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
+SPHINXBUILD   = python3 -m sphinx
 SOURCEDIR     = .
 BUILDDIR      = _build
+SPHINXOPTS    = 
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -17,7 +17,11 @@ help:
 	@echo "   specify RELEASE=name to publish as a tagged release version"
 	@echo "   and placed in a version subfolder.  Requires repo merge permission."
 
-.PHONY: help Makefile
+multiversion: Makefile
+	sphinx-multiversion $(SPHINXOPTS) "$(SOURCEDIR)" "$(BUILDDIR)/html"
+	@echo "<html><head><meta http-equiv=\"refresh\" content=\"0; url=master/index.html\" /></head></html>" > "$(BUILDDIR)"/html/index.html
+
+.PHONY: help Makefile multiversion
 
 # TODO(denis): Enable this!
 # # # # Generate the doxygen xml (for Sphinx) and copy the doxygen html to the
@@ -26,9 +30,9 @@ help:
 # # # html:
 # # # 	$(Q)$(SPHINXBUILD) -t $(DOC_TAG) -b html -d $(BUILDDIR)/doctrees $(SOURCEDIR) $(BUILDDIR)/html $(SPHINXOPTS) $(O)
 
-# Remove generated content (Sphinx and doxygen)
+# Remove generated content (Sphinx and doxygen), don't remove _build since pip also uses _build for pip_packages
 clean:
-	rm -fr $(BUILDDIR)
+	rm -fr $(BUILDDIR)/html $(BUILDDIR)/doctrees
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
