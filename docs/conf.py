@@ -179,9 +179,9 @@ html_sourcelink_suffix = ""
 
 # Add branches you want to whtielist here.
 smv_branch_whitelist = r"^(add_multi_version)$"
-smv_released_pattern = r"^refs/(heads|remotes/[^/]+)/(foxy).*$"
+smv_released_pattern = r"^refs/(heads|remotes/[^/]+)/(add_multi_version).*$"
 smv_remote_whitelist = r"^(origin)$"
-smv_latest_version = "rolling"
+smv_latest_version = "galactic"
 smv_eol_versions = []
 
 distro_full_names = {
@@ -303,7 +303,7 @@ def smv_rewrite_configs(app, config):
     # to rewrite the various configuration items with the current version.
     if app.config.smv_current_version != "":
         branch_distro = {
-            "master": "galactic",
+            "add_multi_version": "galactic",
             "foxy": "foxy",
             "galactic": "galactic"
         }

@@ -19,7 +19,7 @@ help:
 
 multiversion: Makefile
 	sphinx-multiversion $(SPHINXOPTS) "$(SOURCEDIR)" "$(BUILDDIR)/html"
-	@echo "<html><head><meta http-equiv=\"refresh\" content=\"0; url=master/index.html\" /></head></html>" > "$(BUILDDIR)"/html/index.html
+	@echo "<html><head><meta http-equiv=\"refresh\" content=\"0; url=add_multi_version/index.html\" /></head></html>" > "$(BUILDDIR)"/html/index.html
 
 .PHONY: help Makefile multiversion
 
