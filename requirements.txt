@@ -1,4 +1,0 @@
-sphinx
-sphinx-copybutton
-sphinx-multiversion
-sphinx-rtd-theme
