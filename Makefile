@@ -3,7 +3,7 @@
 # The file is inspired by the Makefile for the navigation.ros.org <https://github.com/ros-planning/navigation.ros.org>
 
 # You can set these variables from the command line.
-SPHINXOPTS    = 
+SPHINXOPTS    = -c .
 SPHINXBUILD   = python3 -m sphinx
 SOURCEDIR     = .
 BUILDDIR      = _build
@@ -17,7 +17,11 @@ help:
 	@echo "   specify RELEASE=name to publish as a tagged release version"
 	@echo "   and placed in a version subfolder.  Requires repo merge permission."
 
-.PHONY: help Makefile
+multiversion: Makefile
+	sphinx-multiversion $(SPHINXOPTS) "$(SOURCEDIR)" "$(BUILDDIR)/html"
+	@echo "<html><head><meta http-equiv=\"refresh\" content=\"0; url=add_multi_version/index.html\" /></head></html>" > "$(BUILDDIR)"/html/index.html
+
+.PHONY: help Makefile multiversion
 
 # TODO(denis): Enable this!
 # # # # Generate the doxygen xml (for Sphinx) and copy the doxygen html to the
