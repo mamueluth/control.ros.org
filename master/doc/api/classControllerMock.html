@@ -73,9 +73,9 @@ Inheritance diagram for ControllerMock:</div>
 <div class="dyncontent">
 <div class="center"><img src="classControllerMock__inherit__graph.png" border="0" usemap="#ControllerMock_inherit__map" alt="Inheritance graph"/></div>
 <map name="ControllerMock_inherit__map" id="ControllerMock_inherit__map">
-<area shape="rect" title=" " alt="" coords="71,184,192,211"/>
-<area shape="rect" href="classcontroller__interface_1_1ControllerInterface.html" title=" " alt="" coords="55,95,207,136"/>
-<area shape="rect" title=" " alt="" coords="5,5,257,47"/>
+<area shape="rect" title=" " alt="" coords="31,169,152,196"/>
+<area shape="rect" href="classcontroller__interface_1_1ControllerInterface.html" title=" " alt="" coords="15,80,167,121"/>
+<area shape="rect" title=" " alt="" coords="5,5,177,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -83,9 +83,9 @@ Collaboration diagram for ControllerMock:</div>
 <div class="dyncontent">
 <div class="center"><img src="classControllerMock__coll__graph.png" border="0" usemap="#ControllerMock_coll__map" alt="Collaboration graph"/></div>
 <map name="ControllerMock_coll__map" id="ControllerMock_coll__map">
-<area shape="rect" title=" " alt="" coords="71,184,192,211"/>
-<area shape="rect" href="classcontroller__interface_1_1ControllerInterface.html" title=" " alt="" coords="55,95,207,136"/>
-<area shape="rect" title=" " alt="" coords="5,5,257,47"/>
+<area shape="rect" title=" " alt="" coords="31,169,152,196"/>
+<area shape="rect" href="classcontroller__interface_1_1ControllerInterface.html" title=" " alt="" coords="15,80,167,121"/>
+<area shape="rect" title=" " alt="" coords="5,5,177,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -107,23 +107,26 @@ CONTROLLER_INTERFACE_PUBLIC void&#160;</td><td class="memItemRight" valign="bott
 <tr class="memitem:a30019f5ac2f0ddc0de565cfb8a72cbaf inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a30019f5ac2f0ddc0de565cfb8a72cbaf"></a>
 CONTROLLER_INTERFACE_PUBLIC void&#160;</td><td class="memItemRight" valign="bottom"><b>release_interfaces</b> ()</td></tr>
 <tr class="separator:a30019f5ac2f0ddc0de565cfb8a72cbaf inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45242012435a26ebdf9b435c76138e2c inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a45242012435a26ebdf9b435c76138e2c"></a>
-virtual CONTROLLER_INTERFACE_PUBLIC return_type&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (const std::string &amp;controller_name)</td></tr>
-<tr class="separator:a45242012435a26ebdf9b435c76138e2c inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c343c0f54788876c80f41360a8a1152 inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a1c343c0f54788876c80f41360a8a1152"></a>
+virtual CONTROLLER_INTERFACE_PUBLIC return_type&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (const std::string &amp;controller_name, const std::string &amp;namespace_=&quot;&quot;, const rclcpp::NodeOptions &amp;node_options=rclcpp::NodeOptions() .allow_undeclared_parameters(true) .automatically_declare_parameters_from_overrides(true))</td></tr>
+<tr class="separator:a1c343c0f54788876c80f41360a8a1152 inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b89f8d45dad1e2c560a3e875d18ac9c inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a1b89f8d45dad1e2c560a3e875d18ac9c"></a>
 const CONTROLLER_INTERFACE_PUBLIC rclcpp_lifecycle::State &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcontroller__interface_1_1ControllerInterface.html#a1b89f8d45dad1e2c560a3e875d18ac9c">configure</a> ()</td></tr>
 <tr class="memdesc:a1b89f8d45dad1e2c560a3e875d18ac9c inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom configure method to read additional parameters for controller-nodes. <br /></td></tr>
 <tr class="separator:a1b89f8d45dad1e2c560a3e875d18ac9c inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bb870a1de9de5fa00728e65edabfa6b inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a1bb870a1de9de5fa00728e65edabfa6b"></a>
-virtual CONTROLLER_INTERFACE_PUBLIC LifecycleNodeInterface::CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcontroller__interface_1_1ControllerInterface.html#a1bb870a1de9de5fa00728e65edabfa6b">on_init</a> ()=0</td></tr>
-<tr class="memdesc:a1bb870a1de9de5fa00728e65edabfa6b inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extending interface with initialization method which is individual for each controller. <br /></td></tr>
-<tr class="separator:a1bb870a1de9de5fa00728e65edabfa6b inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2dd98f5d00b7d9cfd14c54f079ea1af inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="af2dd98f5d00b7d9cfd14c54f079ea1af"></a>
+virtual CONTROLLER_INTERFACE_PUBLIC CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcontroller__interface_1_1ControllerInterface.html#af2dd98f5d00b7d9cfd14c54f079ea1af">on_init</a> ()=0</td></tr>
+<tr class="memdesc:af2dd98f5d00b7d9cfd14c54f079ea1af inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extending interface with initialization method which is individual for each controller. <br /></td></tr>
+<tr class="separator:af2dd98f5d00b7d9cfd14c54f079ea1af inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8b0a62b723f29a6a145650b8e016069 inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="ae8b0a62b723f29a6a145650b8e016069"></a>
 virtual CONTROLLER_INTERFACE_PUBLIC return_type&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period)=0</td></tr>
 <tr class="separator:ae8b0a62b723f29a6a145650b8e016069 inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5357984b2e6509b242fa0b0503c811f inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="aa5357984b2e6509b242fa0b0503c811f"></a>
 CONTROLLER_INTERFACE_PUBLIC std::shared_ptr&lt; rclcpp_lifecycle::LifecycleNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_node</b> ()</td></tr>
 <tr class="separator:aa5357984b2e6509b242fa0b0503c811f inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9036c3a81b55a8e39e0d6a449c2caad8 inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a9036c3a81b55a8e39e0d6a449c2caad8"></a>
+CONTROLLER_INTERFACE_PUBLIC std::shared_ptr&lt; rclcpp_lifecycle::LifecycleNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_node</b> () const</td></tr>
+<tr class="separator:a9036c3a81b55a8e39e0d6a449c2caad8 inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17e7c2b0ef26d3509308b2c3188c8e0e inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a17e7c2b0ef26d3509308b2c3188c8e0e"></a>
 const CONTROLLER_INTERFACE_PUBLIC rclcpp_lifecycle::State &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_state</b> () const</td></tr>
 <tr class="separator:a17e7c2b0ef26d3509308b2c3188c8e0e inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,9 +147,6 @@ std::vector&lt; <a class="el" href="classhardware__interface_1_1LoanedCommandInt
 <tr class="memitem:a00f4fdd3ff8b05be1345246ecbc11d1c inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a00f4fdd3ff8b05be1345246ecbc11d1c"></a>
 std::vector&lt; <a class="el" href="classhardware__interface_1_1LoanedStateInterface.html">hardware_interface::LoanedStateInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>state_interfaces_</b></td></tr>
 <tr class="separator:a00f4fdd3ff8b05be1345246ecbc11d1c inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a275948bce4e0b7bcae6846aba3c7de05 inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a275948bce4e0b7bcae6846aba3c7de05"></a>
-std::shared_ptr&lt; rclcpp_lifecycle::LifecycleNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>node_</b></td></tr>
-<tr class="separator:a275948bce4e0b7bcae6846aba3c7de05 inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa311469e922050ee17ff6e2cd9166d87 inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="aa311469e922050ee17ff6e2cd9166d87"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>update_rate_</b> = 0</td></tr>
 <tr class="separator:aa311469e922050ee17ff6e2cd9166d87 inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>

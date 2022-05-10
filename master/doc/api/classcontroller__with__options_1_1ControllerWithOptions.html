@@ -80,10 +80,10 @@ Inheritance diagram for controller_with_options::ControllerWithOptions:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcontroller__with__options_1_1ControllerWithOptions__inherit__graph.png" border="0" usemap="#controller__with__options_1_1ControllerWithOptions_inherit__map" alt="Inheritance graph"/></div>
 <map name="controller__with__options_1_1ControllerWithOptions_inherit__map" id="controller__with__options_1_1ControllerWithOptions_inherit__map">
-<area shape="rect" title=" " alt="" coords="44,184,219,225"/>
-<area shape="rect" href="classFriendControllerWithOptions.html" title=" " alt="" coords="28,273,235,300"/>
-<area shape="rect" href="classcontroller__interface_1_1ControllerInterface.html" title=" " alt="" coords="55,95,207,136"/>
-<area shape="rect" title=" " alt="" coords="5,5,257,47"/>
+<area shape="rect" title=" " alt="" coords="21,169,196,211"/>
+<area shape="rect" href="classFriendControllerWithOptions.html" title=" " alt="" coords="5,259,212,285"/>
+<area shape="rect" href="classcontroller__interface_1_1ControllerInterface.html" title=" " alt="" coords="33,80,185,121"/>
+<area shape="rect" title=" " alt="" coords="23,5,195,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -91,9 +91,9 @@ Collaboration diagram for controller_with_options::ControllerWithOptions:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcontroller__with__options_1_1ControllerWithOptions__coll__graph.png" border="0" usemap="#controller__with__options_1_1ControllerWithOptions_coll__map" alt="Collaboration graph"/></div>
 <map name="controller__with__options_1_1ControllerWithOptions_coll__map" id="controller__with__options_1_1ControllerWithOptions_coll__map">
-<area shape="rect" title=" " alt="" coords="44,184,219,225"/>
-<area shape="rect" href="classcontroller__interface_1_1ControllerInterface.html" title=" " alt="" coords="55,95,207,136"/>
-<area shape="rect" title=" " alt="" coords="5,5,257,47"/>
+<area shape="rect" title=" " alt="" coords="5,169,180,211"/>
+<area shape="rect" href="classcontroller__interface_1_1ControllerInterface.html" title=" " alt="" coords="17,80,169,121"/>
+<area shape="rect" title=" " alt="" coords="7,5,179,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -103,9 +103,9 @@ Public Member Functions</h2></td></tr>
 LifecycleNodeInterface::CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcontroller__with__options_1_1ControllerWithOptions.html#af3014c2b58fc34aea1733e16d80f1f64">on_init</a> () override</td></tr>
 <tr class="memdesc:af3014c2b58fc34aea1733e16d80f1f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extending interface with initialization method which is individual for each controller. <br /></td></tr>
 <tr class="separator:af3014c2b58fc34aea1733e16d80f1f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99feb6f2badcd239fe1c1feef9e00d81"><td class="memItemLeft" align="right" valign="top"><a id="a99feb6f2badcd239fe1c1feef9e00d81"></a>
-controller_interface::return_type&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (const std::string &amp;controller_name) override</td></tr>
-<tr class="separator:a99feb6f2badcd239fe1c1feef9e00d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea78b0218d3c84c3271df959bc1746a"><td class="memItemLeft" align="right" valign="top"><a id="a7ea78b0218d3c84c3271df959bc1746a"></a>
+controller_interface::return_type&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (const std::string &amp;controller_name, const std::string &amp;namespace_=&quot;&quot;, const rclcpp::NodeOptions &amp;node_options=rclcpp::NodeOptions() .allow_undeclared_parameters(true) .automatically_declare_parameters_from_overrides(true)) override</td></tr>
+<tr class="separator:a7ea78b0218d3c84c3271df959bc1746a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a027b6a5015307af7a27481822fed59e0"><td class="memItemLeft" align="right" valign="top"><a id="a027b6a5015307af7a27481822fed59e0"></a>
 <a class="el" href="structcontroller__interface_1_1InterfaceConfiguration.html">controller_interface::InterfaceConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>command_interface_configuration</b> () const override</td></tr>
 <tr class="separator:a027b6a5015307af7a27481822fed59e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +129,9 @@ const CONTROLLER_INTERFACE_PUBLIC rclcpp_lifecycle::State &amp;&#160;</td><td cl
 <tr class="memitem:aa5357984b2e6509b242fa0b0503c811f inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="aa5357984b2e6509b242fa0b0503c811f"></a>
 CONTROLLER_INTERFACE_PUBLIC std::shared_ptr&lt; rclcpp_lifecycle::LifecycleNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_node</b> ()</td></tr>
 <tr class="separator:aa5357984b2e6509b242fa0b0503c811f inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9036c3a81b55a8e39e0d6a449c2caad8 inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a9036c3a81b55a8e39e0d6a449c2caad8"></a>
+CONTROLLER_INTERFACE_PUBLIC std::shared_ptr&lt; rclcpp_lifecycle::LifecycleNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_node</b> () const</td></tr>
+<tr class="separator:a9036c3a81b55a8e39e0d6a449c2caad8 inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17e7c2b0ef26d3509308b2c3188c8e0e inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a17e7c2b0ef26d3509308b2c3188c8e0e"></a>
 const CONTROLLER_INTERFACE_PUBLIC rclcpp_lifecycle::State &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_state</b> () const</td></tr>
 <tr class="separator:a17e7c2b0ef26d3509308b2c3188c8e0e inherit pub_methods_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,9 +158,6 @@ std::vector&lt; <a class="el" href="classhardware__interface_1_1LoanedCommandInt
 <tr class="memitem:a00f4fdd3ff8b05be1345246ecbc11d1c inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a00f4fdd3ff8b05be1345246ecbc11d1c"></a>
 std::vector&lt; <a class="el" href="classhardware__interface_1_1LoanedStateInterface.html">hardware_interface::LoanedStateInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>state_interfaces_</b></td></tr>
 <tr class="separator:a00f4fdd3ff8b05be1345246ecbc11d1c inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a275948bce4e0b7bcae6846aba3c7de05 inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a275948bce4e0b7bcae6846aba3c7de05"></a>
-std::shared_ptr&lt; rclcpp_lifecycle::LifecycleNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>node_</b></td></tr>
-<tr class="separator:a275948bce4e0b7bcae6846aba3c7de05 inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa311469e922050ee17ff6e2cd9166d87 inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memItemLeft" align="right" valign="top"><a id="aa311469e922050ee17ff6e2cd9166d87"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>update_rate_</b> = 0</td></tr>
 <tr class="separator:aa311469e922050ee17ff6e2cd9166d87 inherit pro_attribs_classcontroller__interface_1_1ControllerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
