@@ -3,7 +3,7 @@
 Getting Started
 ===============
 
-The ros2_control framework is released for ROS2 Foxy.
+The ros2_control framework is released for ROS 2 Foxy.
 To use it, you have to install ``ros-foxy-ros2-control`` and ``ros-foxy-ros2-controllers`` packages.
 Other dependencies are installed automatically.
 
@@ -14,7 +14,7 @@ If you want to install the framework from source use following commands in your 
 
 .. code:: bash
 
-   wget https://raw.githubusercontent.com/ros-controls/ros2_control/master/ros2_control/ros2_control.repos
+   wget https://raw.githubusercontent.com/ros-controls/ros2_control/master/ros2_control.rolling.repos
    vcs import src < ros2_control.repos
 
 Architecture
@@ -102,7 +102,7 @@ Hardware Description in URDF
 The ros2_control framework uses the ``<ros2_control>``-tag in the robot's URDF file to describe its components, i.e., the hardware setup.
 The chosen structure enables tracking together multiple `xacro`-macros into one without any changes.
 The example hereunder shows a position-controlled robot with 2-DOF (RRBot), an external 1-DOF force-torque sensor, and an externally controlled 1-DOF parallel gripper as its end-effector.
-For more examples and detailed explanations, check `ros2_control_demos`_ repository and `ROS2 Control Components URDF Examples design document`_.
+For more examples and detailed explanations, check `ros2_control_demos`_ repository and `ROS 2 Control Components URDF Examples design document`_.
 
 .. code:: xml
 
@@ -168,7 +168,7 @@ The example files can be found in the `ros2_control_demos`_ repository.
    You can use a default `ros2_control node`_ (recommended) or integrate the controller manager in your software stack.
    (`Example launch file for RRBot <https://github.com/ros-controls/ros2_control_demos/blob/master/ros2_control_demo_bringup/launch/rrbot_system_position_only.launch.py>`_)
    
-*NOTE:* You could alternatively use a script to create setup a `skeleton of the "hardware_interface" package by using the scripts <https://stoglrobotics.github.io/ros_team_workspace/use-cases/setup_robot_ros2_control_hardware.html>`_ provided by one of our maintainers.
+*NOTE:* You could alternatively use a script to create setup a `skeleton of the "hardware_interface" package by using the scripts <https://stoglrobotics.github.io/ros_team_workspace/master/use-cases/ros2_control/setup_robot_hardware_interface.html>`_ provided by one of our maintainers.
 
 
 .. _ros2_control: https://github.com/ros-controls/ros2_control
@@ -188,7 +188,7 @@ The example files can be found in the `ros2_control_demos`_ repository.
 .. _Node Lifecycle Design: https://design.ros2.org/articles/node_lifecycle.html
 .. _ros2controlcli: https://github.com/ros-controls/ros2_control/tree/master/ros2controlcli
 .. _Hardware Access through Controllers design document: https://github.com/ros-controls/roadmap/blob/master/design_drafts/hardware_access.md
-.. _ROS2 Control Components URDF Examples design document: https://github.com/ros-controls/roadmap/blob/master/design_drafts/components_architecture_and_urdf_examples.md
+.. _ROS 2 Control Components URDF Examples design document: https://github.com/ros-controls/roadmap/blob/master/design_drafts/components_architecture_and_urdf_examples.md
 .. _roadmap: https://github.com/ros-controls/roadmap
 .. _ROS Discourse: https://discourse.ros.org
 
