@@ -209,14 +209,7 @@ The published message type is <code class="docutils literal notranslate"><span c
 <p>The controller is a wrapper around <code class="docutils literal notranslate"><span class="pre">IMUSensor</span></code> semantic component (see <code class="docutils literal notranslate"><span class="pre">controller_interface</span></code> package).</p>
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading"></a></h2>
-<dl class="simple">
-<dt>frame_id (mandatory)</dt><dd><p>Frame in which the output message will be published.</p>
-</dd>
-<dt>sensor_name (mandatory)</dt><dd><p>Defines sensor name used as prefix for its interfaces.
-Interface names are: &lt;sensor_name&gt;/orientation.x, …, &lt;sensor_name&gt;/angular_velocity.x, …,
-&lt;sensor_name&gt;/linear_acceleration.x.</p>
-</dd>
-</dl>
+<p>This controller uses the <a class="reference external" href="https://github.com/PickNikRobotics/generate_parameter_library">generate_parameter_library</a> to handle its parameters.</p>
 </section>
 </section>
 
